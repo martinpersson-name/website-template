@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Docker: Launch PHP",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "BUILD_CONTAINERS",
+            "platform": "node",
+            "dockerServerReadyAction": {
+                "action": "openExternally",
+                "pattern": ".*:8000.*"
+            }
+        }
+    ]
+}
