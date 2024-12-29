@@ -1,0 +1,17 @@
+{
+    "name": "PHP Development",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "web",
+    "workspaceFolder": "/customers/6/6/d/example.com/httpd.www",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscode.php-language-features"
+            ],
+            "settings": {
+                "php.validate.enable": true,
+                "php.validate.executablePath": "remote:/usr/local/bin/php"
+            }
+        }
+    }
+}
